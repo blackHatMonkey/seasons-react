@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+.season-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.season-display i {
+    margin: .5em;
+    animation: rotating 10s linear infinite;
+}
+
+.season-display.sun i {
+    color: blue;
+}
+
+.season-display.winter i {
+    color: rgb(255, 255, 255);
+}
+
+.text-content {
+    border-radius: 15%;
+    background-color: #ddd;
+    padding: 2em;
+    font-size: 2em;
+    font-family: 'Coiny', cursive;
+}
+
+.winter {
+    background-color: #88b3d8;
+}
+
+.summer {
+    background-color: orange;
+}
+
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
